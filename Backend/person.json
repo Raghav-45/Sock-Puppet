@@ -1,0 +1,120 @@
+{
+    "seed_details": {
+        "7caff78c35c42d2e": [
+            {
+                "gender": "male",
+                "name": {
+                    "title": "Mr",
+                    "first": "Andrew",
+                    "last": "Beck"
+                },
+                "location": {
+                    "street": {
+                        "number": 1701,
+                        "name": "Nowlin Rd"
+                    },
+                    "city": "Sunnyvale",
+                    "state": "Connecticut",
+                    "country": "United States",
+                    "postcode": 33393,
+                    "coordinates": {
+                        "latitude": "31.7291",
+                        "longitude": "-39.1379"
+                    },
+                    "timezone": {
+                        "offset": "-12:00",
+                        "description": "Eniwetok, Kwajalein"
+                    }
+                },
+                "email": "andrew.beck@example.com",
+                "login": {
+                    "uuid": "00028d24-fbb0-42bd-83f9-2dc494cb9316",
+                    "username": "sadmeercat324",
+                    "password": "`2Q<*b3d-",
+                    "salt": "0URclTZs",
+                    "md5": "eb60025dcb1d4e12541a613bf6c61b9e",
+                    "sha1": "6f85a371cd8311224a8709e4f7abf1f074a2a25b",
+                    "sha256": "6ec9cf341093bcce57ac1939e13ca49f2d20458fe3e34fe6ddcc5abc8dfc2c4b"
+                },
+                "dob": {
+                    "date": "1948-11-09T01:51:33.877Z",
+                    "age": 73
+                },
+                "registered": {
+                    "date": "2010-08-31T19:50:06.058Z",
+                    "age": 12
+                },
+                "phone": "(211) 389-4492",
+                "cell": "(667) 511-3842",
+                "id": {
+                    "name": "SSN",
+                    "value": "332-27-7510"
+                },
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/men/21.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/men/21.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/21.jpg"
+                },
+                "nat": "US"
+            }
+        ],
+        "cfbc98fb4bd20c3e": [
+            {
+                "gender": "female",
+                "name": {
+                    "title": "Mrs",
+                    "first": "Melissa",
+                    "last": "Lucas"
+                },
+                "location": {
+                    "street": {
+                        "number": 3121,
+                        "name": "Eason Rd"
+                    },
+                    "city": "Bueblo",
+                    "state": "Nevada",
+                    "country": "United States",
+                    "postcode": 52921,
+                    "coordinates": {
+                        "latitude": "69.0267",
+                        "longitude": "83.5036"
+                    },
+                    "timezone": {
+                        "offset": "+1:00",
+                        "description": "Brussels, Copenhagen, Madrid, Paris"
+                    }
+                },
+                "email": "melissa.lucas@example.com",
+                "login": {
+                    "uuid": "b8674318-77df-4630-af7b-2d778fd16a8a",
+                    "username": "purpleleopard683",
+                    "password": "'Q;rqw~;Jp",
+                    "salt": "B19AmbA9",
+                    "md5": "152eea100e88ec9a68df2515437183e6",
+                    "sha1": "c286529a38894579279f97b262138d660b0d0976",
+                    "sha256": "361d02d9b624f1e544e622f61ac383c012e18aecd083e5721c39b5a78a6aac14"
+                },
+                "dob": {
+                    "date": "1988-08-21T20:35:16.644Z",
+                    "age": 34
+                },
+                "registered": {
+                    "date": "2018-05-29T23:32:03.862Z",
+                    "age": 4
+                },
+                "phone": "(469) 511-8731",
+                "cell": "(584) 485-7027",
+                "id": {
+                    "name": "SSN",
+                    "value": "284-40-0268"
+                },
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/women/77.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/women/77.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/77.jpg"
+                },
+                "nat": "US"
+            }
+        ]
+    }
+}
