@@ -1,15 +1,9 @@
-from flask import Flask, jsonify, request
+from flask import Flask, request
 from flask_cors import CORS
-import requests
 import json
 
 app = Flask(__name__)
 CORS(app)
-
-# def fetchUser(gender, nationality):
-#     res = requests.get(f'https://randomuser.me/api/?gender={gender}&nat={nationality}&password=upper,lower,number,special,8-12&format=json')
-#     response = json.loads(res.text)
-#     return response
 
 def write_json(new_data, filename='person.json'):
     with open(filename,'r+') as file:

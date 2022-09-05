@@ -4,12 +4,12 @@ import axios from "axios"
 
 function SeedPage() {
   const { seed } = useParams()
-  const [seedfetchedData, setSeedfetchedData] = useState({})
+  const [seedData, setSeedData] = useState({})
 
   function FetchSeed() {
     axios.get(`http://127.0.0.1:5000/seed/${seed}`)
       .then((resp) => {
-        setSeedfetchedData(resp.data)
+        setSeedData(resp.data)
       })
   }
 
@@ -19,7 +19,7 @@ function SeedPage() {
   
   return (
     <div className="App">
-      <pre style={{ textAlign: "left" }}>{JSON.stringify(seedfetchedData, undefined, 4)}</pre>
+      <pre style={{ textAlign: "left" }}>{JSON.stringify(seedData, undefined, 4)}</pre>
     </div>
   )
 }
