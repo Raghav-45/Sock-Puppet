@@ -1,13 +1,15 @@
-from flask import Flask, request
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 import requests
 import json
 
 app = Flask(__name__)
+CORS(app)
 
-def fetchUser(gender, nationality):
-    res = requests.get(f'https://randomuser.me/api/?gender={gender}&nat={nationality}&password=upper,lower,number,special,8-12&format=json')
-    response = json.loads(res.text)
-    return response
+# def fetchUser(gender, nationality):
+#     res = requests.get(f'https://randomuser.me/api/?gender={gender}&nat={nationality}&password=upper,lower,number,special,8-12&format=json')
+#     response = json.loads(res.text)
+#     return response
 
 def write_json(new_data, filename='person.json'):
     with open(filename,'r+') as file:
@@ -22,14 +24,6 @@ def write_json(new_data, filename='person.json'):
         file.seek(0)
         # convert back to json.
         json.dump(file_data, file, indent = 4)
-
-@app.route('/puppet/', methods=['GET'])
-def hello_world():
-    gender = request.args.get('gender', default = '', type = str)
-    nationality = request.args.get('nationality', default = 'us', type = str)
-    data = fetchUser(gender, nationality)
-    write_json(data)
-    return data
     
 @app.route('/seed/<seed>', methods=['GET'])
 def seed(seed):
@@ -37,6 +31,12 @@ def seed(seed):
         file_data = json.load(file)
         return file_data['seed_details'][seed]
     
+@app.route('/save/', methods=['POST'])
+def save():
+    data = request.json
+    write_json(data)
+    return '200'
+
 
 # main driver function
 if __name__ == '__main__':
