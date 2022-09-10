@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route index element={<Puppet/>} />
         <Route path='/puppet' element={<Puppet/>} />
-        <Route path='/profile' element={<Profile/>} />
+        <Route path='/profile/:seed' element={<Profile/>} />
         <Route path='/seed/:seed' element={<SeedPage/>} />
       </Routes>
     </Router>
