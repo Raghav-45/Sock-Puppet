@@ -29,8 +29,8 @@ function Profile() {
 
   const rAddr = async () => {
     const r = await axios.get(`http://127.0.0.1:5000/puppet/${seed}`)
-    const data = await r.data[`${seed}`][0]
-    console.log(data.Email)
+    const data = await r.data[`${seed}`]
+    console.log(data)
     setSockPuppetData(data)
     setGotData(true)
     // return(data)

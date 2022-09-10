@@ -3,6 +3,7 @@ from flask_cors import CORS
 import json
 import random
 import csv
+import requests
 
 app = Flask(__name__)
 CORS(app)
@@ -47,7 +48,12 @@ class Puppet:
     def __init__(self):
         pup = 'str'
     
-    def Generate(self):
+    def fetchUser(self, gender, nationality):
+        res = requests.get(f'https://randomuser.me/api/?gender={gender}&nat={nationality}&password=upper,lower,number,special,8-12&format=json')
+        response = json.loads(res.text)
+        return response
+    
+    def Generate(self, gender, nat):
         da = genAddress()
         dd = {
             "d5a4012dfe42345c": [
@@ -120,7 +126,7 @@ class Puppet:
 
 @app.route('/puppet/<seed>')
 def puppet(seed):
-    return Puppet().Generate()
+    return Puppet().Generate('male', 'us')
 
 # main driver function
 if __name__ == '__main__':
